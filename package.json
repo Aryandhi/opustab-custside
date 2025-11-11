@@ -4,5 +4,12 @@
     "@types/node": "^24.10.0",
     "typescript": "^5.9.3"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test --grep @auth",
+    "test:login": "playwright test --grep @login",
+    "test:file": "playwright test src/tests/auth/login.spec.ts",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  }
 }
